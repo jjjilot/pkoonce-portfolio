@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
 import { Hero } from '../components/Hero.jsx';
-import { Stats } from '../components/Stats.jsx';
+import { SocialLinks } from '../components/SocialLinks.jsx';
 import { getPageFromSlug } from '../utils/content.js';
 
 const componentMap = {
   hero: Hero,
-  stats: Stats,
+  socialLinks: SocialLinks,
 };
 
 export default async function ComposablePage() {
