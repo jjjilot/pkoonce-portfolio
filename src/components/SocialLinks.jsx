@@ -1,4 +1,5 @@
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 const themeClassMap = {
   primary: 'bg-orange-400 text-white',
@@ -14,13 +15,13 @@ export const SocialLinks = (props) => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         {props.heading && (
           <h2
-            className="text-2xl font-semibold"
+            className="text-2xl"
             data-sb-field-path="heading"
           >
             {props.heading}
           </h2>
         )}
-        <div className="flex justify-center gap-6 text-3xl">
+        <div className="flex justify-center gap-20 text-3xl">
           {(props.links || []).map((link, idx) => (
             <a
               key={idx}
@@ -30,7 +31,7 @@ export const SocialLinks = (props) => {
               data-sb-object-id={link.id}
               data-sb-field-path="url label"
               aria-label={link.label}
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 hover:scale-110 transition-opacity"
             >
               {getIcon(link.label)}
             </a>
@@ -45,10 +46,10 @@ const getIcon = (label) => {
   switch (label.toLowerCase()) {
     case 'linkedin':
       return <FaLinkedin />;
-    case 'github':
-      return <FaGithub />;
-    case 'twitter':
-      return <FaTwitter />;
+    case 'instagram':
+      return <FaInstagram />;
+    case 'email':
+      return <MdEmail />;
     default:
       return <span>{label}</span>;
   }
