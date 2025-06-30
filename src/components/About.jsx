@@ -15,13 +15,13 @@ export const About = (props) => {
         className={`max-w-5xl mx-auto flex flex-col gap-4 md:items-center ${themeClassMap[props.theme] ?? themeClassMap['imgRight']}`}
       >
         <div className="flex-1 w-full max-w-md mx-auto">
-          <h1 className={`mb-2 text-2xl sm:text-3xl ${headingAlignClass}`} data-sb-field-path="heading">
+          <h1 className={`mb-2 text-2xl sm:text-3xl font-thin text-orange-400 ${headingAlignClass}`} data-sb-field-path="heading">
             {props.heading}
           </h1>
           {props.body && (
             <Markdown
               options={{ forceBlock: true }}
-              className={`mb-3 text-sm sm:text-base text-justify`}
+              className={`mb-3 text-sm sm:text-base text-gray-700 text-justify`}
               data-sb-field-path="body"
             >
               {props.body}
