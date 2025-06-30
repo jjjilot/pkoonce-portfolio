@@ -8,7 +8,6 @@ const themeClassMap = {
 
 export const About = (props) => {
   const headingAlignClass = props.theme === 'imgLeft' ? 'text-left' : 'text-right';
-  const bodyAlignClass = props.theme === 'imgLeft' ? 'text-left' : 'text-right';
 
   return (
     <div className="px-4 py-6 bg-gray-100 sm:px-6 sm:py-8" data-sb-object-id={props.id}>
@@ -22,7 +21,7 @@ export const About = (props) => {
           {props.body && (
             <Markdown
               options={{ forceBlock: true }}
-              className={`mb-3 text-sm sm:text-base ${bodyAlignClass}`}
+              className={`mb-3 text-sm sm:text-base text-justify`}
               data-sb-field-path="body"
             >
               {props.body}
