@@ -46,7 +46,7 @@ export const Hero = (props) => {
 
       {/* Section lead-in heading */}
       <div className="bg-gray-100 py-8">
-        <h2 className="text-center text-5xl font-thin text-orange-400">About PKC</h2>
+        <h2 className="text-center text-5xl font-thin text-orange-400">Our Services</h2>
       </div>
     </>
   );

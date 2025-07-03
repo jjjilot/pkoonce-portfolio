@@ -1,12 +1,14 @@
 import { notFound } from 'next/navigation';
 import { Hero } from '../components/Hero.jsx';
 import { About } from '../components/About.jsx';
+import { AboutFooter } from '../components/AboutFooter.jsx';
 import { SocialLinks } from '../components/SocialLinks.jsx';
 import { getPageFromSlug } from '../utils/content.js';
 
 const componentMap = {
   realhero: Hero, // Mismatching names due to Contentful quirk
   hero: About, // Mismatching names due to Contentful quirk
+  aboutFooter: AboutFooter,
   socialLinks: SocialLinks,
 };
 
