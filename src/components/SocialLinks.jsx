@@ -1,6 +1,6 @@
-import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import { SiBluesky } from 'react-icons/si';
+import { SiBluesky, SiX } from 'react-icons/si';
 
 const themeClassMap = {
   primary: 'bg-orange-400 text-white',
@@ -44,8 +44,9 @@ const getIcon = (label) => {
   switch (label.toLowerCase()) {
     case 'linkedin':
       return <FaLinkedin />;
+    case 'x':
     case 'twitter':
-      return <FaTwitter />;
+      return <SiX />;
     case 'bluesky':
       return <SiBluesky />;
     case 'email':
