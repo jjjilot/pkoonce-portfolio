@@ -1,5 +1,6 @@
-import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { SiBluesky } from 'react-icons/si';
 
 const themeClassMap = {
   primary: 'bg-orange-400 text-white',
@@ -14,10 +15,7 @@ export const SocialLinks = (props) => {
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         {props.heading && (
-          <h2
-            className="text-2xl"
-            data-sb-field-path="heading"
-          >
+          <h2 className="text-2xl" data-sb-field-path="heading">
             {props.heading}
           </h2>
         )}
@@ -46,8 +44,10 @@ const getIcon = (label) => {
   switch (label.toLowerCase()) {
     case 'linkedin':
       return <FaLinkedin />;
-    case 'instagram':
-      return <FaInstagram />;
+    case 'twitter':
+      return <FaTwitter />;
+    case 'bluesky':
+      return <SiBluesky />;
     case 'email':
       return <MdEmail />;
     default:
