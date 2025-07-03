@@ -10,7 +10,7 @@ export const AboutFooter = (props) => {
             {props.body && (
                 <Markdown
                     options={{ forceBlock: true }}
-                    className="max-w-4xl mx-auto text-lg font-thin sm:text-md leading-relaxed text-center"
+                    className="max-w-4xl mx-auto text-lg font-thin sm:text-md leading-relaxed text-center mb-6"
                     data-sb-field-path="body"
                 >
                     {props.body}
