@@ -29,17 +29,14 @@ export const About = (props) => {
           )}
         </div>
         {props.image && (
-          <div className="flex-1 w-full flex justify-center">
-            <div className="w-full max-w-xs sm:max-w-sm md:max-w-sm lg:max-w-md">
-              <Image
-                src={props.image.src}
-                alt={props.image.alt}
-                width={600}
-                height={400}
-                className="w-full h-auto rounded-md object-contain"
-                data-sb-field-path="image"
-              />
-            </div>
+          <div style={{ width: '475px', height: '350px', position: 'relative' }}>
+            <Image
+              src={props.image.src}
+              alt={props.image.alt}
+              fill
+              className="object-cover rounded-md"
+              data-sb-field-path="image"
+            />
           </div>
         )}
       </div>
