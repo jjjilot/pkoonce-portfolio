@@ -5,6 +5,8 @@ import { AboutFooter } from '../../components/AboutFooter.jsx';
 import { InfoAbout } from '../../components/InfoAbout.jsx';
 import { InfoGeneral } from '../../components/InfoGeneral.jsx'; // Assuming this component exists
 import { SocialLinks } from '../../components/SocialLinks.jsx';
+import { SocialPosts } from '../../components/SocialPosts.jsx';
+import { SocialPost } from '../../components/SocialPost.jsx';
 import { getPageFromSlug } from '../../utils/content.js';
 
 const componentMap = {
@@ -14,6 +16,8 @@ const componentMap = {
   infoAbout: InfoAbout,
   infoGeneral: InfoGeneral,
   socialLinks: SocialLinks,
+  socialPost: SocialPost,
+  socialPosts: SocialPosts,
 };
 
 export default async function ComposablePage({ params }) {
