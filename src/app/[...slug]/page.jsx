@@ -3,6 +3,7 @@ import { Hero } from '../../components/Hero.jsx';
 import { About } from '../../components/About.jsx';
 import { AboutFooter } from '../../components/AboutFooter.jsx';
 import { InfoAbout } from '../../components/InfoAbout.jsx';
+import { InfoGeneral } from '../../components/InfoGeneral.jsx'; // Assuming this component exists
 import { SocialLinks } from '../../components/SocialLinks.jsx';
 import { getPageFromSlug } from '../../utils/content.js';
 
@@ -11,6 +12,7 @@ const componentMap = {
   about: About,
   aboutFooter: AboutFooter,
   infoAbout: InfoAbout,
+  infoGeneral: InfoGeneral,
   socialLinks: SocialLinks,
 };
 

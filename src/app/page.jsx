@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero.jsx';
 import { About } from '../components/About.jsx';
 import { AboutFooter } from '../components/AboutFooter.jsx';
 import { InfoAbout } from '../components/InfoAbout.jsx';
+import { InfoGeneral } from '../components/InfoGeneral.jsx';
 import { SocialLinks } from '../components/SocialLinks.jsx';
 import { getPageFromSlug } from '../utils/content.js';
 
@@ -11,6 +12,7 @@ const componentMap = {
   hero: About, // Mismatching names due to Contentful quirk
   aboutFooter: AboutFooter,
   infoAbout: InfoAbout,
+  infoGeneral: InfoGeneral,
   socialLinks: SocialLinks,
 };
 
