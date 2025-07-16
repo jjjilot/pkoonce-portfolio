@@ -3,10 +3,12 @@ import { Hero } from '../../components/Hero.jsx';
 import { About } from '../../components/About.jsx';
 import { AboutFooter } from '../../components/AboutFooter.jsx';
 import { InfoAbout } from '../../components/InfoAbout.jsx';
-import { InfoGeneral } from '../../components/InfoGeneral.jsx'; // Assuming this component exists
+import { InfoGeneral } from '../../components/InfoGeneral.jsx';
 import { SocialLinks } from '../../components/SocialLinks.jsx';
 import { SocialPosts } from '../../components/SocialPosts.jsx';
 import { SocialPost } from '../../components/SocialPost.jsx';
+import { InfoGrants } from '../../components/InfoGrants.jsx';
+import { Footer } from '../../components/Footer.jsx';
 import { getPageFromSlug } from '../../utils/content.js';
 
 const componentMap = {
@@ -18,6 +20,8 @@ const componentMap = {
   socialLinks: SocialLinks,
   socialPost: SocialPost,
   socialPosts: SocialPosts,
+  infoGrants: InfoGrants,
+  footer: Footer,
 };
 
 export default async function ComposablePage({ params }) {
